@@ -58,4 +58,4 @@ for tweet in tweet_iter:
 
 	# now output our tweet
 	# print "(%s) @%s" % (time_colored, user_colored)
-	print "(%s) %s" % (tweet["lang"], tweet["text"])
+	print "(%s) %s" % (tweet["lang"], unicode(tweet["text"]))
