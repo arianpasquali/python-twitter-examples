@@ -56,9 +56,6 @@ for tweet in tweet_iter:
 	user_colored = colored(tweet["user"]["screen_name"], "green")
 	text_colored = tweet["text"]
 
-	indent = " " * 11
-	text_colored = fill(text_colored, 80, initial_indent = indent, subsequent_indent = indent)
-
 	# now output our tweet
-	print "(%s) @%s" % (time_colored, user_colored)
-	print "(%s) %s" % (tweet["lang"], text_colored)
+	# print "(%s) @%s" % (time_colored, user_colored)
+	print "(%s) %s" % (tweet["lang"], tweet["text"])
